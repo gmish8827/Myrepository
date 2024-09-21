@@ -1,0 +1,10 @@
+name: must run on self hosted runner
+
+on: push
+
+jobs:
+  init:
+    runs-on: seft-hosted
+    steps:
+      - run: echo 'hello gaurav'
+      - run: echo $hostname
